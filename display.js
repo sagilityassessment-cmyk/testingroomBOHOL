@@ -1,4 +1,4 @@
-const SITE = "qc";
+const SITE = "BOHOL";
 
 import { db } from "./firebase.js";
 import {
@@ -56,7 +56,7 @@ function draw(seats = []) {
     board.innerHTML = html;
 }
 
-/* QC SEATS */
+/* BOHOL SEATS */
 onValue(
     ref(db, `locations/${SITE}/seats`),
     snapshot => {
@@ -68,7 +68,7 @@ onValue(
     }
 );
 
-/* QC QUEUE */
+/* BOHOL QUEUE */
 onValue(
     ref(db, `locations/${SITE}/queue`),
     snapshot => {
